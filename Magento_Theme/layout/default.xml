@@ -9,5 +9,8 @@
             </arguments>
         </referenceBlock>
         <referenceBlock name="report.bugs" display="false"/>
+        <referenceContainer name="footer">
+            <container name="phone-number" htmlTag="div" htmlId="phone-number-container"/>
+        </referenceContainer>
     </body>
 </page>
