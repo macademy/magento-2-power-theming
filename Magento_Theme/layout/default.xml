@@ -10,7 +10,9 @@
         </referenceBlock>
         <referenceBlock name="report.bugs" display="false"/>
         <referenceContainer name="footer">
-            <container name="phone-number" htmlTag="div" htmlId="phone-number-container"/>
+            <container name="phone-number-container" htmlTag="div" htmlId="phone-number-container">
+                <block name="phone-number" template="Juno_Theme::phone-number.phtml"/>
+            </container>
         </referenceContainer>
     </body>
 </page>
