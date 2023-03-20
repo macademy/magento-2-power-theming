@@ -1,9 +1,10 @@
 <?php
 /** @var $block Magento\Framework\View\Element\Template */
+/** @var $escaper Magento\Framework\Escaper */
 /** @var $phoneNumberViewModel Juno\Theme\ViewModel\PhoneNumber */
 $phoneNumberViewModel = $block->getData('phone_number_view_model');
 ?>
 
 <div class="phone-number">
-    <?= __('Phone number: %1', $phoneNumberViewModel->getPhoneNumber()) ?>
+    <?= __('Phone number: %1', $escaper->escapeHtml($phoneNumberViewModel->getPhoneNumber())) ?>
 </div>
