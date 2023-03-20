@@ -1,0 +1,9 @@
+<?php
+/** @var $block Magento\Framework\View\Element\Template */
+/** @var $hoursViewModel Juno\Theme\ViewModel\Hours */
+$hoursViewModel = $block->getData('hours_view_model');
+?>
+
+<div class="hours">
+    <?= __('Store Hours: %1', $hoursViewModel->getHours()) ?>
+</div>
