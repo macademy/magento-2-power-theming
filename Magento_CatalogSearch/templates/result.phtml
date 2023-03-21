@@ -32,6 +32,7 @@ $productList = $block->getProductListHtml();
         <div>
             <?= $block->escapeHtml($block->getNoResultText() ? $block->getNoResultText() : __('Your search returned no results.')) ?>
             <h2><?= __("This probably isn't what you were looking for!") ?></h2>
+            <p><img src="<?= $block->getViewFileUrl('Magento_CatalogSearch::images/yoda-dog.png') ?>" alt="<?= __('Yoda dog') ?>"/></p>
             <?= /* @noEscape */ $block->getAdditionalHtml() ?>
             <?php if ($messages = $block->getNoteMessages()) : ?>
                 <?php foreach ($messages as $message) : ?>
