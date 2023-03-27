@@ -5,6 +5,6 @@
 $phoneNumberViewModel = $block->getData('phone_number_view_model');
 ?>
 
-<div class="phone-number">
+<div class="phone-number" data-aos="fade-down">
     <?= __('Phone number: %1', $escaper->escapeHtml($phoneNumberViewModel->getPhoneNumber())) ?>
 </div>
