@@ -1,13 +1,27 @@
 & when (@media-common = true) {
-    .shipping-notice {
+    .shipping-notice-container {
         padding-top: 20px;
         margin-top: 20px;
         border-top: 1px solid @color-gray82;
+        color: @color-gray-middle3;
 
         .label {
             font-weight: bold;
         }
 
-        .lib-tooltip(bottom);
+        .shipping-notice {
+            .lib-tooltip(
+                bottom,
+                @_tooltip-arrow-offset: 7px
+            );
+
+            .lib-icon-font(
+                @icon-help,
+                @_icon-font-size: 24px,
+                @_icon-font-color: @color-gray-light3,
+                @_icon-font-color-hover: @primary__color,
+                @_icon-font-color-active: false
+            );
+        }
     }
 }
